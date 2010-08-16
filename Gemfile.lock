@@ -1,0 +1,40 @@
+PATH
+  remote: .
+  specs:
+    adyen (0.3.7)
+      actionpack
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionpack (2.3.8)
+      activesupport (= 2.3.8)
+      rack (~> 1.1.0)
+    activerecord (2.3.8)
+      activesupport (= 2.3.8)
+    activesupport (2.3.8)
+    gemcutter (0.6.1)
+    git (1.2.5)
+    handsoap (1.1.6)
+    libxml-ruby (1.1.4)
+    nokogiri (1.4.3.1)
+    rack (1.1.0)
+    rake (0.8.7)
+    rspec (1.3.0)
+    sqlite3-ruby (1.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  actionpack
+  activerecord (~> 2.3)
+  adyen!
+  gemcutter
+  git (>= 1.1.0)
+  handsoap
+  libxml-ruby
+  nokogiri
+  rake
+  rspec (>= 1.1.4)
+  sqlite3-ruby

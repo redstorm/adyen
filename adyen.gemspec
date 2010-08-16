@@ -15,8 +15,19 @@ Gem::Specification.new do |s|
   s.email    = ['willem@vanbergen.org', 'cicaboo@gmail.com']
   s.homepage = 'http://wiki.github.com/wvanbergen/adyen'
 
+  s.add_runtime_dependency('actionpack')
+
+  s.add_development_dependency('rake')
   s.add_development_dependency('rspec', '>= 1.1.4')
   s.add_development_dependency('git', '>= 1.1.0')
+  s.add_development_dependency('gemcutter')
+
+  # Optional dependencies. I've added them as development dependencies.
+  s.add_development_dependency('handsoap')
+  s.add_development_dependency('activerecord', '~> 2.3')
+  s.add_development_dependency('sqlite3-ruby')
+  s.add_development_dependency('nokogiri') 
+  s.add_development_dependency('libxml-ruby') # TODO: use nokogiri instead for this stuff.
 
   s.requirements << 'Handsoap is required for accessing the SOAP services. See http://github.com/troelskn/handsoap.'
   s.requirements << 'LibXML is required for using the RSpec matchers.'

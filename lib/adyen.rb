@@ -75,3 +75,4 @@ end
 
 require 'adyen/encoding'
 require 'adyen/formatter'
+require 'adyen/form'
